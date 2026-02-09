@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarmila Devi G | Data Scientist & AI Developer</title>
+    <title>Sarmiladevi G | Data Scientist & AI Developer</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -152,16 +152,95 @@
                 flex-direction: column-reverse;
                 text-align: center
             }
+
+            header {
+                padding: 15px 5%;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 0;
+                font-size: 0.9rem;
+            }
+
+            body {
+                padding-top: 130px;
+            }
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 20px 10%;
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: var(--text);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Adjust body padding for fixed header */
+        body {
+            padding-top: 80px;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
         }
     </style>
 </head>
 
 <body>
 
+    <header id="header">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#strengths">Core Strengths</a>
+            <a href="#hackathons">Hackathons</a>
+            <a href="#awards">Awards</a>
+            <a href="#social">Social Contributions</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="about">
         <div>
-            <h1>Sarmila Devi G</h1>
+            <h1>Sarmiladevi G</h1>
             <h3>Data Scientist • Machine Learning Engineer • AI Developer</h3>
             <p>
                 Aspiring Data Scientist with strong academic performance and hands-on experience in
@@ -205,8 +284,54 @@
         </div>
     </section>
 
+    <!-- EXPERIENCE -->
+    <section class="container" id="experience">
+        <h2>Professional Experience</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h4>AI & Data Science Intern — Helyxon Healthcare (Apr 2025 – Jun 2025)</h4>
+                <ul>
+                    <li>Developed LLM-based chatbot using Ollama (Llama)and Agentic AI using LangChain and LangGraph
+                        handling 1,000+ queries</li>
+                    <li>Built AI resume parsing pipeline extracting 50+ structured fields</li>
+                    <li>Reduced manual screening workload by 60% making sortlisting easier for any role according to the
+                        job description provided
+                        <div class="badge" style="margin-top:8px;">
+                            <span>Agentic AI</span>
+                            <span>LLM</span>
+                            <span>RAG</span>
+                            <span>Python</span>
+                            <span>NLP</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Backend Engineer & Team Lead — Helyxon Healthcare (Sep 2025 – Mar 2026)</h4>
+                <ul>
+                    <li>Architected backend services for enterprise platform (100+ users)</li>
+                    <li>Led a 4-member team in deploying bulk email system delivering 5,000+ automated emails</li>
+                    <li>Ticket resolving System for 50+ tickets generated at a go
+                        <div class="badge" style="margin-top:8px;">
+                            <span>FastAPI</span>
+                            <span>SendGrid & WebHook</span>
+                            <span>HTML , CSS and JavaScript</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
     <!-- SKILLS -->
-    <section>
+    <!-- SKILLS -->
+    <section id="skills">
         <h2>Technical Skill Set</h2>
         <div class="card">
             <h3>Programming & Scripting</h3>
@@ -216,27 +341,33 @@
             </div>
 
             <h3 style="margin-top:25px">Machine Learning & AI</h3>
-            <p>Supervised & Unsupervised Learning, NLP, Deep Learning, Time Series Analysis,
+            <p>Supervised & Unsupervised Learning, NLP, Deep Learning, Reinforcement Learning,
+                Time Series Analysis,
                 Feature Engineering, Model Validation</p>
 
             <h3 style="margin-top:25px">Large Language Models & GenAI</h3>
             <p>Prompt Engineering, Embeddings, Ollama (Gemma, Llama), RAG, CRAG,
                 LangChain, LangGraph, Semantic Search</p>
 
-            <h3 style="margin-top:25px">Databases & Data Handling</h3>
-            <p>MySQL, MongoDB, PostgreSQL, Relational Databases, Regex-based Information Extraction</p>
 
-            <h3 style="margin-top:25px">Visualization & Reporting</h3>
-            <p>Power BI, Tableau, MS Excel, PowerPoint</p>
 
             <h3 style="margin-top:25px">Tools & Platforms</h3>
-            <p>Git, GitHub, Apache NetBeans, MATLAB, SendGrid, Groq API, UiPath,
+            <p>Git, GitHub, Apache NetBeans, MATLAB, SendGrid, Groq API,Webhook, UiPath,
                 Crawl4AI (Web Crawling, Website Parsing), Pandas, NumPy, Seaborn</p>
+
+            <h3 style="margin-top:25px">Big Data and Databases</h3>
+            <p>Apache Spark, Hadoop, Hive, MongoDB, MySQL, PostgreSQL, Relational Databases, Regex-based Information
+                Extraction, Cassandra</p>
+
+            <h3 style="margin-top:25px">Data Visualization & Analysis</h3>
+            <p>Tableau, Excel, Data Analysis, Statistical Inference, Regression Analysis</p>
+
+            <h3 style="margin-top:25px">Soft Skills</h3>
+            <p>Problem-solving, Critical Thinking, Teamwork, Communication, Adaptability</p>
         </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section>
+    <section id="projects">
         <h2>Projects & Research Experience</h2>
         <div class="grid">
 
@@ -246,6 +377,9 @@
                     <li>AI-driven resume screening using NLP & LLMs</li>
                     <li>Reduced recruiter effort by 75%</li>
                 </ul>
+                <div class="badge">
+                    <span>Python</span><span>NLP</span><span>LLMs</span><span>AI</span>
+                </div>
             </div>
 
             <div class="card">
@@ -254,21 +388,31 @@
                     <li>Full-stack healthcare system</li>
                     <li>ML disease prediction & DL image analysis</li>
                 </ul>
+                <div class="badge">
+                    <span>Python</span><span>Machine Learning</span><span>Deep Learning</span><span>Full Stack</span>
+                </div>
             </div>
 
             <div class="card">
                 <h3>Reinforcement Learning-Based Path Optimizer</h3>
                 <ul>
-                    <li>Q-learning for optimal navigation paths</li>
+                    <li>Q-learning for optimal path navigation</li>
                 </ul>
+                <div class="badge">
+                    <span>Reinforcement Learning</span><span>Q-Learning</span><span>Python</span>
+                </div>
             </div>
+
             <div class="card">
                 <h3>AI-Powered Agentic Algorithmic Trading System</h3>
                 <ul>
-                    <li>Designed an agentic AI-based algorithmic trading system for financial markets</li>
-                    <li>Applied ARIMA & LSTM for time-series forecasting and RL (PPO/DQN) for trading decisions</li>
-
+                    <li>Designed an agentic AI-based trading system</li>
+                    <li>ARIMA, LSTM forecasting with PPO/DQN decision-making</li>
                 </ul>
+                <div class="badge">
+                    <span>Time Series</span><span>ARIMA</span><span>LSTM</span><span>Reinforcement
+                        Learning</span><span>Agentic AI</span>
+                </div>
             </div>
 
             <div class="card">
@@ -277,6 +421,9 @@
                     <li>Hybrid metaheuristic feature selection</li>
                     <li>Journal paper communicated</li>
                 </ul>
+                <div class="badge">
+                    <span>Nature inspired Optimization</span><span>Feature Selection</span><span>Machine Learning</span>
+                </div>
             </div>
 
             <div class="card">
@@ -285,6 +432,9 @@
                     <li>CoT vs standard prompting vs Few-shot analysis</li>
                     <li>Research paper communicated</li>
                 </ul>
+                <div class="badge">
+                    <span>Prompt Engineering</span><span>LLMs</span><span>GenAI</span>
+                </div>
             </div>
 
             <div class="card">
@@ -293,14 +443,53 @@
                     <li>NLP pipelines</li>
                     <li>Multi-dataset evaluation (Journal paper communicated)</li>
                 </ul>
+                <div class="badge">
+                    <span>NLP</span><span>Clinical Text</span><span>Machine Learning</span><span>Deep Learning</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Automated Timetable Management System</h3>
+                <ul>
+                    <li>Flask & MongoDB based full-stack system</li>
+                    <li>Genetic Algorithm for conflict-free scheduling</li>
+                </ul>
+                <div class="badge">
+                    <span>Python</span><span>Flask</span><span>MongoDB</span><span>Genetic Algorithm</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Student Management System</h3>
+                <ul>
+                    <li>Deployed scalable system on Microsoft Azure Virtual Machines</li>
+                    <li>Centralized platform for student data management</li>
+                </ul>
+                <div class="badge">
+                    <span>Microsoft Azure</span><span>Virtual Machine</span><span>MongoDB</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Real-Time Data Automation System</h3>
+                <ul>
+                    <li>Automated data extraction using UiPath and Crawl4AI</li>
+                    <li>Handled complex pagination and real-time processing</li>
+                </ul>
+                <div class="badge">
+                    <span>UiPath</span><span>Crawl4AI</span><span>Automation</span>
+                </div>
             </div>
 
             <div class="card">
                 <h3>RAG vs CRAG – Comparative Study</h3>
                 <ul>
-                    <li>Reliability & accuracy benchmarking</li>
+                    <li>Reliability & accuracy benchmarking between the two techniques.</li>
                     <li>Conference paper communicated</li>
                 </ul>
+                <div class="badge">
+                    <span>RAG</span><span>CRAG</span><span>LLMs</span><span>Semantic Search</span>
+                </div>
             </div>
 
             <div class="card">
@@ -309,61 +498,43 @@
                     <li>Supervised ML models</li>
                     <li>Published in IEEE Conference</li>
                 </ul>
+                <div class="badge">
+                    <span>Machine Learning</span><span>Healthcare</span><span>Supervised Learning</span>
+                </div>
             </div>
 
             <div class="card">
                 <h3>Smart IoT Doorbell Management System</h3>
                 <ul>
-                    <li>IR sensors, buzzer, motor, email alerts</li>
+                    <li>IR sensors, motor control, email alerts</li>
                     <li>Paper in preparation</li>
                 </ul>
+                <div class="badge">
+                    <span>IoT</span><span>Sensors</span><span>Automation</span><span>PostgreSQL</span>
+                </div>
             </div>
 
             <div class="card">
                 <h3>Automated Research Paper Generation System</h3>
                 <ul>
-                    <li>UiPath automation</li>
-                    <li>AI-driven literature generation</li>
+                    <li>UiPath automation for paper collection</li>
+                    <li>AI-driven model evaluation and literature generation</li>
                 </ul>
+                <div class="badge">
+                    <span>UiPath</span><span>Automation</span><span>AI Agents</span>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section>
-        <h2>Industry Experience</h2>
-        <div class="timeline">
 
-            <div class="timeline-item">
-                <h3>Backend Engineer & Team Lead (Intern)</h3>
-                <p><strong>Helyxon Healthcare Pvt Ltd, Chennai</strong> | Sep 2025 – Mar 2026</p>
-                <ul>
-                    <li>Scalable backend services</li>
-                    <li>5,000+ automated emails</li>
-                    <li>Led 4-member team</li>
-                    <li>Resolved 50+ tickets</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <h3>AI & Data Science Intern</h3>
-                <p><strong>Helyxon Healthcare Pvt Ltd, Chennai</strong> | Apr 2025 – Jun 2025</p>
-                <ul>
-                    <li>LLM chatbot (1,000+ queries)</li>
-                    <li>Resume parsing (10+ attributes)</li>
-                    <li>Reduced manual workload by 60%</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
 
     <!-- CERTIFICATIONS -->
-    <section>
+    <section id="certifications">
         <h2>Certifications</h2>
-        <div class="card">
-            <ul>
+        <div class="card" style="text-align: center;">
+            <ul style="display: inline-block; text-align: left;">
                 <li>Python for Data Science – NPTEL</li>
                 <li>Programming in Java – NPTEL</li>
                 <li>Excel for Data Analysis</li>
@@ -372,19 +543,19 @@
     </section>
 
     <!-- CORE STRENGTHS -->
-    <section>
+    <section id="strengths">
         <h2>Core Strengths</h2>
-        <div class="card">
+        <div class="card" style="text-align: center;">
             <p>Analytical Thinking • Problem Solving • Research Orientation • Team Leadership •
                 Communication • Project Management • Model Deployment • Data Interpretation</p>
         </div>
     </section>
 
     <!-- HACKATHONS -->
-    <section>
+    <section id="hackathons">
         <h2>Hackathons & Activities</h2>
-        <div class="card">
-            <ul>
+        <div class="card" style="text-align: center;">
+            <ul style="display: inline-block; text-align: left;">
                 <li>Smart India Hackathon 2024 – AI-based road safety solution</li>
                 <li>Smart India Hackathon 2025 – AI-powered timetable scheduling system</li>
                 <li>Code-O-Clock 2025 – AI Call Intelligence System</li>
@@ -393,10 +564,10 @@
     </section>
 
     <!-- AWARDS -->
-    <section>
+    <section id="awards">
         <h2>Awards & Achievements</h2>
-        <div class="card">
-            <ul>
+        <div class="card" style="text-align: center;">
+            <ul style="display: inline-block; text-align: left;">
                 <li>1st Rank – 7th Semester (SGPA: 9.79)</li>
                 <li>Consistent academic excellence</li>
             </ul>
@@ -404,22 +575,22 @@
     </section>
 
     <!-- SOCIAL -->
-    <section>
+    <section id="social">
         <h2>Social Contribution</h2>
-        <div class="card">
+        <div class="card" style="text-align: center;">
             <h3>National Service Scheme (NSS) Volunteer</h3>
             <p>2023 – 2024</p>
-            <ul>
+            <ul style="display: inline-block; text-align: left;">
                 <li>Rural development & sanitation initiatives</li>
                 <li>Student mentoring & community outreach</li>
             </ul>
         </div>
     </section>
 
-    <footer>
+    <footer id="contact">
         <a href="https://linkedin.com/in/sarmiladevig2504"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Sharmila-std"><i class="fab fa-github"></i></a>
-        <p style="margin-top:15px;">© 2026 Sarmila Devi G</p>
+        <p style="margin-top:15px;">© 2026 Sarmiladevi G</p>
     </footer>
 
 </body>
